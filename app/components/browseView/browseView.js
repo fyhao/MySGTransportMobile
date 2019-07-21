@@ -26,38 +26,7 @@ function pageLoaded(args) {
 
 // START_CUSTOM_CODE_homeView
 // Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes
-var view = require("ui/core/view");
-function goTap(args) {
-    var sender = args.object;
-    var parent = sender.parent;
-    if (parent) {
-        var tf = view.getViewById(parent, "urlTF");
-        if (tf) {
-            var url = tf.text;
-            // Browse URL
-			modBrowse.browseURL(url);
-        }
-    }
-}
-function goScan(args) {
-    var sender = args.object;
-    var parent = sender.parent;
-    if (parent) {
-        scanner.scan(function(error, result) {
-			//alert(JSON.stringify(result));
-			var url = result.text;
-            // Browse URL
-			modBrowse.browseURL(url);
-		});
-    }
-}
-
-function goVersion() {
-	var version = require('../../utils/version');
-	alert('Version: ' + version.version);
-}
-exports.goTap = goTap;
-exports.goScan = goScan;
-exports.goVersion = goVersion;
+var url = 'https://raw.githubusercontent.com/fyhao/MySGTransportMobile/master/landing.json';
+modBrowse.browseURL(url);
 // END_CUSTOM_CODE_homeView
 exports.pageLoaded = pageLoaded;

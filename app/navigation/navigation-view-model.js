@@ -5,23 +5,8 @@ var menuItems,
 
 menuItems = [
     {
-        "title": "Browse",
+        "title": "Use Me",
         "moduleName": "components/browseView/browseView",
-        "icon": "\ue903"
-    },
-    {
-        "title": "Browse from History",
-        "moduleName": "components/browseHistoryView/browseHistoryView",
-        "icon": "\ue903"
-    },
-    {
-        "title": "Offline Page",
-        "moduleName": "components/offlinePageView/offlinePageView",
-        "icon": "\ue903"
-    },
-    {
-        "title": "Home View",
-        "moduleName": "components/homeView/homeView",
         "icon": "\ue903"
     }
 
