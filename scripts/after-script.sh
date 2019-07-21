@@ -9,12 +9,12 @@ if test "$TRAVIS_BRANCH" = 'staging'; then
 
 	./scripts/remove-key.sh
 
-	APP_FOLDER="/Users/travis/build/fyhao/tns-webform-client/platforms/ios/build/device/"
+	APP_FOLDER="/Users/travis/build/fyhao/MySGTransportMobile/platforms/ios/build/device/"
 
 	APP_PATH="$APP_NAME.ipa"
 	if test "$PROVISIONING_TYPE" = '0'; then
 		APP_PATH="$APP_NAME.app"
-		APP_FOLDER="/Users/travis/build/fyhao/tns-webform-client/platforms/ios/build/emulator/"
+		APP_FOLDER="/Users/travis/build/fyhao/MySGTransportMobile/platforms/ios/build/emulator/"
 
 	fi
 
@@ -33,7 +33,7 @@ if test "$TRAVIS_BRANCH" = 'staging'; then
 		unzip $APP_NAME.zip
 		ls -la
 		
-		cd "/Users/travis/build/fyhao/tns-webform-client/"
+		cd "/Users/travis/build/fyhao/MySGTransportMobile/"
 		pwd
 	fi
 
