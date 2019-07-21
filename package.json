@@ -4,7 +4,7 @@
   "readme": "NativeScript Application",
   "repository": "https://github.com/fyhao/tns-webform-client",
   "nativescript": {
-    "id": "org.nativescript.tnswebformclient",
+    "id": "com.fyhao.mysgtransportmobile",
     "tns-ios": {
       "version": "3.2.0"
     }
