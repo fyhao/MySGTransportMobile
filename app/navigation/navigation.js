@@ -1,7 +1,8 @@
 'use strict';
 var helpers = require('../utils/widgets/helper'),
-    navigationViewModel = require('./navigation-view-model');
-
+    navigationViewModel = require('./navigation-view-model'),
+	modBrowse = require('../lib/modBrowse/modBrowse.js');
+	
 function pageLoaded(args) {
     var page = args.object;
 
@@ -11,7 +12,8 @@ function pageLoaded(args) {
 }
 
 function menuItemTap(args) {
-    helpers.navigate(navigationViewModel.menuItems[args.index]);
+    var url = 'https://raw.githubusercontent.com/fyhao/MySGTransportMobile/master/landing.json';
+	modBrowse.browseURL(url);
 }
 
 exports.pageLoaded = pageLoaded;
